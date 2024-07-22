@@ -2,14 +2,16 @@ import { ChevronDown, CircleCheck, CircleChevronRight, CircleHelp, Github, Insta
 
 export default function InitialPage() {
     return (
-        <div className="max-w-6xl mx-auto">
-            <header className="flex items-center justify-between px-2 py-4">
+        <div className="max-w-screen-2xl mx-auto">
+            <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-20 py-5 flex items-center justify-between bg-menuBg">
                 <div className="logo-container">
-                    <img className="w-40" src="./public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
+                    <a href="#">
+                        <img className="w-32" src="./public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
+                    </a>
                 </div>
 
                 <div className="flex items-center gap-20">
-                    <nav>
+                    <nav className="">
                         <ul className="flex items-center gap-8">
                             <li className="font-bold transition hover:text-green-500">
                                 <a href="#initial-banner-section">Início</a>
@@ -39,7 +41,11 @@ export default function InitialPage() {
             </header>
             
             <main>
-                <section id="initial-banner-section" className="w-full h-[600px] flex items-center px-6">
+                <section id="about" className="about">
+
+                </section>
+
+                <section id="initial-banner-section" className="w-full h-[760px] flex items-center px-20 bg-banner-image-02 bg-no-repeat bg-cover bg-center">
                     <div className="">
                         <h2 className="w-[700px] text-6xl font-semibold leading-[4.8rem] tracking-wider">Desenvolvemos soluções para o seu negócio.</h2>
                         <h5 className="mt-6 mb-8 text-2xl font-semibold tracking-wider">Soluções web personalizadas.</h5>
@@ -52,7 +58,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="services-section" className="py-24 space-y-20">
+                <section id="services-section" className="py-24 px-20 space-y-20">
                     <h3 className="text-5xl text-center font-semibold tracking-wider">Serviços</h3>
 
                     <div className="services-list px-6 flex gap-8">
@@ -85,7 +91,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="services-section-v2" className="py-24 space-y-20">
+                <section id="services-section-v2" className="py-24 px-20 space-y-20">
                     <h3 className="text-5xl text-center font-semibold tracking-wider">Serviços v2</h3>
 
                     <div className="services-list px-6 flex flex-wrap">
@@ -130,7 +136,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="qualities-section" className="flex items-center justify-center gap-20 py-24">
+                <section id="qualities-section" className="py-24 px-20 flex items-center justify-center gap-20">
                     <div className="w-1/2">
                         <h3 className="text-4xl font-bold tracking-[16px] leading-[60px]">
                             QUALIDADE <br /> GARANTIDA
@@ -168,10 +174,10 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="projects-section" className="py-24 space-y-20">
-                    <h3 className="text-5xl text-center font-semibold tracking-wider">Nossos Projetos</h3>
+                <section id="projects-section" className="py-24 px-20">
+                    <h3 className="text-5xl text-center font-semibold tracking-wider mb-12">Nossos Projetos</h3>
 
-                    <div className="services-list flex flex-wrap py-10 px-10">
+                    <div className="services-list flex flex-wrap py-10 px-10 mb-10">
                         <div className="w-1/2">
                             <div className="mb-6 mr-6 bg-bgServiceCard border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div>
@@ -236,7 +242,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="contact-section" className="py-24 space-y-20">
+                <section id="contact-section" className="py-24 px-20 space-y-20">
                     <h3 className="text-5xl text-center font-semibold tracking-wider">Entre em Contato</h3>
 
                     <div>
@@ -286,7 +292,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="faq-section" className="py-24 space-y-20">
+                <section id="faq-section" className="py-24 px-20 space-y-20">
                     <h3 className="text-5xl text-center font-semibold tracking-wider">Perguntas Frequentes</h3>
 
                     <div className="questions-list space-y-4">
@@ -319,9 +325,9 @@ export default function InitialPage() {
                 </section>
             </main>
 
-            <footer className="py-10 flex items-center justify-between">
+            <footer className="py-8 px-20 flex items-center justify-between">
                 <div>
-                    <img className="w-40" src="./public/logo-vertical-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
+                    <img className="w-32" src="./public/logo-vertical-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
                 </div>
                 <div className="flex flex-col items-start gap-4">
                     <h5 className="text-2xl">Entre em Contato</h5>
