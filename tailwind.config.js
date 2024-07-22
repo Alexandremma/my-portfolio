@@ -10,7 +10,22 @@ export default {
         sans: 'Comfortaa',
       },
       colors: {
-        menuBg: 'rgb(89, 91, 115, 0.5)',
+        primaryBg: '#2F1893',
+        // azul marinho #002D54
+        // bg-gray-900 #111827
+        // bg-gray-800 #1F2937
+        // 2F1893
+        primaryTransparent: 'rgb(89, 91, 115, 0.5)',
+        primaryText: '#FAFAFA',
+        // primaryText: 'rgb(255, 159, 64)',
+        // text-zinc-50 #FAFAFA
+        // text-zinc-800 #27272A
+        // text-zinc-900 #18181B
+        secondaryText: 'rgb(59, 130, 246)',
+        otherTextColor: 'rgb(56, 189, 248)',
+        highlightGreen: 'rgb(16, 185, 129)',
+        highlightPink: 'rgb(236, 72, 153)',
+        highlightButton: 'rgb(255, 193, 7)',
         serviceCard: 'rgb(89, 91, 115, 0.1)',
         serviceCardBorder: 'rgb(255, 255, 255, 0.1)',
       },
