@@ -63,7 +63,7 @@ export default function InitialPage() {
                         </button>
                     </div>
                     <div>
-
+                        oi
                     </div>
                 </section>
 
