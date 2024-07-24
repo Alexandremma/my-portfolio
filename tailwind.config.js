@@ -10,12 +10,14 @@ export default {
         sans: 'Comfortaa',
       },
       colors: {
-        primaryTransparent: '', // menu cinza transparente
-        secondaryTransparent: 'rgb(0,0,0,0.4)',
+        primaryTransparent: 'rgb(255,255,255,0.4)', // menu cinza transparente
+        secondaryTransparent: 'rgb(0,0,0,0.3)',
+        bgTransparent: '',
         // rgb(89, 91, 115, 0.5) - transparente
         primaryBg: '#043873', //azul
-        // azul bg imagem 04 #043873
+        // azul bg imagem 04 #043873 terceiro escolhido
         // roxo bg imagem 03 #5E29C9 segundo escolhido
+        // azul claro #4F9CF9 escolhido
         // roxo #2F1893
         // azul marinho #002D54
         // bg-gray-900 #111827
@@ -27,13 +29,29 @@ export default {
         serviceBg: '',
         serviceBg2: '',
         projectBg: '',
-        inputBg: '#fff', // fundo inputs
-        inputIconBg: 'gray',
         questionBg: 'rgb(4, 56, 115, 0.7)',
+        // d6e4ff - azul claro
+        // 1a237e - azul escuro
+        // FFD700 - amarelo dourado (complementar)
+        // FFA500 - laranja suave (complementar)
+        // 3B82F6 - azul claro suave
+        // 00BFFF - azul mais destaque
+        // E6E6FA - lavanda
+        // 8A2BE2 - roxo destaque mesmo do botão
+        // 6366f1 - roxin do fundo gradiente
+        // 2563eb - azul do fundo gradiente
         iconBg: '#fff',
-        buttonBg: '#8A2BE2', // fundo botão
-        buttonHighlight: '', // fundo botão hover
-        buttonFormBg: '',
+        buttonBg: '#4F46E5', // fundo botão
+        buttonNew: 'rgb(224, 124, 241)',
+        // 8A2BE2 - roxo destaque mesmo do botão
+        // 4F46E5 - indigo-600
+        // rgb(224, 124, 241) - lilas
+        buttonHighlight: '#3730A3', // fundo botão hover
+        buttonHighlight2: '#6366F1', // fundo botão hover
+        inputBg: 'rgb(0,0,0,0)', // fundo inputs
+        // 043873
+        inputIconBg: 'gray',
+        buttonFormBg: '#043873',
         buttonFormHighlight: '',
         // -------------
         menuText: '#fff',
@@ -73,9 +91,14 @@ export default {
         'banner-image-02': "url('./src/assets/images/banners/banner_inicial_02.png')",
         'banner-image-03': "url('./src/assets/images/banners/BG.png')",
         'banner-image-04': "url('./src/assets/images/banners/Hero-section-blue-detail.png')",
-        'banner-image-05': "url('./src/assets/images/banners/Hero-section-white-detail.png')",
+        'banner-image-05': "url('./src/assets/images/banners/Hero-section-white-detail.svg')",
         'banner-image-06': "url('./src/assets/images/banners/Background.png')",
         'banner-image-07': "url('./src/assets/images/banners/Image.png')",
+        'element-01': "url('./src/assets/images/elements/BG-Elemento.svg')",
+        'element-02': "url('./src/assets/images/elements/BG-Elemento-2.svg')",
+        'element-03': "url('./src/assets/images/elements/Contato-Elemento.svg')",
+        'element-04': "url('./src/assets/images/elements/Contato-Elemento-2.svg')",
+        'element-05': "url('./src/assets/images/elements/Contato-Elemento-3.svg')",
       }
     },
   },
