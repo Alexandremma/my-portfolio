@@ -11,7 +11,8 @@ export default {
       },
       colors: {
         primaryTransparent: 'rgb(255,255,255,0.4)', // menu cinza transparente
-        secondaryTransparent: 'rgb(0,0,0,0.3)',
+        secondaryTransparent: 'rgb(0,0,0,0.5)',
+        otherTransparent: '#2863EB95',
         bgTransparent: '',
         // rgb(89, 91, 115, 0.5) - transparente
         primaryBg: '#043873', //azul
@@ -26,9 +27,21 @@ export default {
         testBg: '#042F6F',
         testBg2: '#1A396F',
         testBg3: '#084E9E',
-        serviceBg: '',
-        serviceBg2: '',
-        projectBg: '',
+        serviceBg: '#2863EB70',
+        serviceBg2: '#2863EB70',
+        // 2863EB70
+        // #2863EB
+        // #6366F1
+        // #6A5ACD - roxo legal
+        // #4682B4 - azul legal
+        // #87CEEB - azul clarin
+        // #FF69B4 - rosa escuro
+        // #FFB6C1 - rosa claro
+        // #40E0D0 - turquesa daora
+        // #98FB98 - verde pálido
+        // #32CD32 - verde lima
+        // #FF6F61 - laranja pessego
+        projectBg: '#2863EB70',
         questionBg: 'rgb(4, 56, 115, 0.7)',
         // d6e4ff - azul claro
         // 1a237e - azul escuro
@@ -50,12 +63,15 @@ export default {
         buttonHighlight2: '#6366F1', // fundo botão hover
         inputBg: 'rgb(0,0,0,0)', // fundo inputs
         // 043873
-        inputIconBg: 'gray',
-        buttonFormBg: '#043873',
-        buttonFormHighlight: '',
+        inputIconBg: '#fff',
+        // gray
+        buttonFormBg: '#4F46E5',
+        // #043873 - azul botão
+        buttonFormHighlight: '#3730A3',
         // -------------
         menuText: '#fff',
-        menuHighlight: '#8A2BE2',
+        menuHighlight: '#3730A3',
+        // roxo - #8A2BE2
         bannerText: '#fff', // título banner inicial
         primaryText: '#fff', // laranja título
         // #FFB347 - laranja
@@ -63,6 +79,7 @@ export default {
         // rgb(56, 189, 248) - 
         secondaryText: '#fff', // título cards e secundários
         contentText: '#fff', // cor textos menores
+        otherTextColor: 'rgb(56, 189, 248)',
         buttonText: '#fff',
         // rgb(16, 185, 129) - verde highlight
         // rgb(236, 72, 153) - rosa highlight
@@ -76,7 +93,7 @@ export default {
         // text-zinc-50 #FAFAFA
         // text-zinc-800 #27272A
         // text-zinc-900 #18181B
-        otherTextColor: 'rgb(56, 189, 248)',
+        inputPlaceholderText: '#fff',
         highlightGreen: 'rgb(16, 185, 129)',
         highlightPink: 'rgb(236, 72, 153)',
         highlightButton: 'rgb(255, 193, 7)',
