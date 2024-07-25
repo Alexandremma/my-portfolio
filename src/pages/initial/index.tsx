@@ -3,17 +3,18 @@ import { ChevronDown, CircleCheck, CircleChevronRight, CircleHelp, Github, Insta
 export default function InitialPage() {
     return (
         <div className="max-w-screen-2xl mx-auto">
-            <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-28 py-5 flex items-center justify-between bg-bgTransparent">
+            <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-6 md:px-24 py-5 flex items-center justify-between bg-bgTransparent">
                 <div className="logo-container">
                     <a href="#">
                         <img className="w-32" src="./public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
                     </a>
                 </div>
 
-                <div className="">
+                <div className="lg:hidden">
                     <Menu />
                 </div>
-                <div className="flex items-center gap-20">
+
+                <div className="hidden lg:flex items-center gap-20">
                     <nav className="">
                         <ul className="flex items-center gap-8">
                             <li className="text-menuText font-semibold transition hover:text-menuHighlight">
@@ -37,7 +38,7 @@ export default function InitialPage() {
                         </ul>
                     </nav>
 
-                    <button className="px-10 pt-3.5 pb-3  leading-none text-buttonText text-sm font-bold bg-buttonBg rounded-full transition hover:bg-buttonHighlight">
+                    <button className="px-10 pt-3.5 pb-3 leading-none text-sm text-buttonText font-bold bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                         Entrar em Contato
                     </button>
                 </div>
@@ -58,12 +59,12 @@ export default function InitialPage() {
                         <h5 className="mt-6 mb-8 text-2xl text-bannerText font-semibold tracking-wider">
                             Soluções web personalizadas.
                         </h5>
-                        <button className="px-10 py-4 font-bold leading-6 tracking-wider text-lg text-buttonText bg-buttonBg rounded-full transition hover:bg-buttonHighlight">
+                        <button className="px-10 py-4 font-bold leading-6 tracking-wider text-lg text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             Saiba Mais
                         </button>
                     </div>
                     <div>
-                        oi
+                        <img className="w-full" src="./src/assets/images/banners/web-options.svg" alt="" />
                     </div>
                 </section>
 
@@ -192,7 +193,7 @@ export default function InitialPage() {
                     </div>
 
                     <div className="relative text-center">
-                        <button className="px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full transition hover:bg-buttonHighlight">
+                        <button className="px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             Entrar em Contato
                         </button>
                     </div>
@@ -212,7 +213,7 @@ export default function InitialPage() {
                             o cliente está satisfeito.
                         </p>
 
-                        <button className="font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full transition hover:bg-buttonHighlight">
+                        <button className="font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             <a href="#projects-section" className="block pt-3.5 pb-3 px-20">
                                 Veja nossos projetos
                             </a>
@@ -251,11 +252,14 @@ export default function InitialPage() {
                 </section>
 
                 <section id="projects-section" className="relative py-32 px-20 bg-gradient-to-b from-indigo-500 to-blue-600">
-                    <h3 className="text-5xl text-primaryText text-center font-semibold tracking-wider mb-12">
+                    <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-left-top"></div>
+                    <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-right-bottom"></div>
+
+                    <h3 className="relative text-5xl text-primaryText text-center font-semibold tracking-wider mb-12">
                         Nossos Projetos
                     </h3>
 
-                    <div className="services-list relative flex flex-wrap py-10 px-6 mb-10">
+                    <div className="relative services-list flex flex-wrap py-10 px-6 mb-10">
                         {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-cover bg-no-repeat bg-center"></div> */}
 
                         <div className="w-1/2">
@@ -323,8 +327,8 @@ export default function InitialPage() {
                         </div>
                     </div>
 
-                    <div className="text-center">
-                        <button className="px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full transition hover:bg-buttonHighlight">
+                    <div className="relative text-center">
+                        <button className="px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             Quero construir meu Site
                         </button>
                     </div>
@@ -337,14 +341,14 @@ export default function InitialPage() {
                             <img src="./src/assets/images/elements/Contato-Elemento.svg" alt="" />
                         </div>
 
-                        <form className="w-1/2 space-y-16">
-                            <div className="space-y-10">
+                        <form className="w-1/2 space-y-14">
+                            <div className="space-y-8">
                                 <h3 className="relative text-5xl text-white text-center font-semibold tracking-wider">
                                     Entrar Em Contato
                                 </h3>
 
                                 <p className="text-center">
-                                    Mande uma mensagem para nós e entraremos em contato com você para conversarmos sobre seu projeto.
+                                    Mande uma mensagem para nós e entraremos em contato com você para conversarmos sobre o seu projeto.
                                 </p>
                             </div>
 
@@ -384,7 +388,7 @@ export default function InitialPage() {
                                 </div>
 
                                 <div className="text-right">
-                                    <button type="submit" className="py-2 px-12 font-bold bg-buttonFormBg rounded-lg transition hover:bg-buttonFormHighlight">Enviar</button>
+                                    <button type="submit" className="py-2 px-12 font-bold bg-buttonFormBg rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -402,28 +406,32 @@ export default function InitialPage() {
                     </h3>
 
                     <div className="questions-list px-6 space-y-4">
-                        <div className="question-item py-3 px-8 flex items-center gap-4 bg-questionBg rounded-2xl">
-                            <CircleCheck className="text-contentText size-7" />
+                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
+                            <CircleHelp className="text-contentText size-8" />
                             <span className="flex-1 text-lg text-contentText font-semibold">Quanto tempo leva para desenvolver meu site?</span>
                             <ChevronDown className="size-8 text-contentText font-bold" />
                         </div>
-                        <div className="question-item py-3 px-8 flex items-center gap-4 bg-questionBg rounded-2xl">
-                            <CircleCheck className="text-contentText size-7" />
+
+                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
+                            <CircleHelp className="text-contentText size-8" />
                             <span className="flex-1 text-lg text-contentText font-semibold">Quais as tecnologias utilizadas no desenvolvimento do site?</span>
                             <ChevronDown className="size-8 text-contentText font-bold" />
                         </div>
-                        <div className="question-item py-3 px-8 flex items-center gap-4 bg-questionBg rounded-2xl">
-                            <CircleCheck className="text-contentText size-7" />
+
+                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
+                            <CircleHelp className="text-contentText size-8" />
                             <span className="flex-1 text-lg text-contentText font-semibold">Como é a comunicação ao longo da criação do site?</span>
                             <ChevronDown className="size-8 text-contentText font-bold" />
                         </div>
-                        <div className="question-item py-3 px-8 flex items-center gap-4 bg-questionBg rounded-2xl">
-                            <CircleHelp className="text-contentText size-7" />
+
+                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
+                            <CircleCheck className="text-contentText size-8" />
                             <span className="flex-1 text-lg text-contentText font-semibold">Meu site irá funcionar em celulares e tablets?</span>
                             <ChevronDown className="size-8 text-contentText font-bold" />
                         </div>
-                        <div className="question-item py-3 px-8 flex items-center gap-4 bg-questionBg rounded-2xl">
-                            <CircleHelp className="text-contentText size-7" />
+
+                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
+                            <CircleCheck className="text-contentText size-8" />
                             <span className="flex-1 text-lg text-contentText font-semibold">Meu site vai aparecer no Google?</span>
                             <ChevronDown className="size-8 text-contentText font-bold" />
                         </div>
@@ -449,15 +457,15 @@ export default function InitialPage() {
                         <h5 className="text-2xl font-bold">
                             Redes Sociais
                         </h5>
-                        <div className="social-media-list flex items-center gap-4">
-                            <a href="#">
-                                <Linkedin />
+                        <div className="social-media-list flex items-center gap-6">
+                            <a href="https://www.linkedin.com/in/alexandre-martins-maciel-78379b152/" target="_blank">
+                                <Linkedin className="text-contentText size-7" />
                             </a>
-                            <a href="#">
-                                <Github />
+                            <a href="https://github.com/Alexandremma" target="_blank">
+                                <Github className="text-contentText size-7" />
                             </a>
-                            <a href="#">
-                                <Instagram />
+                            <a href="https://www.instagram.com/alexandremm3/" target="_blank">
+                                <Instagram className="text-contentText size-7" />
                             </a>
                         </div>
                     </div>

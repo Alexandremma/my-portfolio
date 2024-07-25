@@ -41,8 +41,12 @@ export default {
         // #98FB98 - verde pálido
         // #32CD32 - verde lima
         // #FF6F61 - laranja pessego
+
+        // #6A6CFF - roxo stormbrain
+        // #BD71FF - rosa stormbrain
         projectBg: '#2863EB70',
-        questionBg: 'rgb(4, 56, 115, 0.7)',
+        questionBg: '#2863EB70',
+        // questionBg: 'rgb(4, 56, 115, 0.7)',
         // d6e4ff - azul claro
         // 1a237e - azul escuro
         // FFD700 - amarelo dourado (complementar)
@@ -101,7 +105,9 @@ export default {
         serviceCardBorder: 'rgb(255, 255, 255, 0.1)',
       },
       boxShadow: {
-        shape: '0px 8px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03), inset 0px 1px 0px rgba(255, 255, 255, 0.03)'
+        shape: '0px 8px 8px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03), inset 0px 1px 0px rgba(255, 255, 255, 0.03)',
+        shape2: '0px 8px 8px rgba(0, 0, 0, 0.04), 0px 4px 4px rgba(0, 0, 0, 0.04), 0px 2px 2px rgba(0, 0, 0, 0.04), 0px 0px 0px 1px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03), inset 0px 1px 0px rgba(255, 255, 255, 0.03)',
+        shape3: '0px 2px 2px rgba(255, 255, 255, 0.1), 1px -1px 0px rgba(255, 255, 255, 0.1), 1px 1px 0px rgba(255, 255, 255, 0.1), -2px 0px 0px 0px rgba(255, 255, 255, 0.1), inset 0px 0px 0px 0px rgba(255, 255, 255, 0.01), inset 0px 0px 0px rgba(255, 255, 255, 0.01)',
       },
       backgroundImage: {
         'banner-image-01': "url('./src/assets/images/banners/banner_inicial_01.png')",
