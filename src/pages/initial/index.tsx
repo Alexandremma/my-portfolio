@@ -11,7 +11,7 @@ export default function InitialPage() {
                 </div>
 
                 <div className="lg:hidden">
-                    <Menu />
+                    <Menu className="size-10" />
                 </div>
 
                 <div className="hidden lg:flex items-center gap-20">
@@ -53,18 +53,18 @@ export default function InitialPage() {
                     {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-cover bg-no-repeat bg-center"></div> */}
 
                     <div className="relative">
-                        <h2 className="md:w-[640px] text-5xl lg:text-6xl text-bannerText font-semibold leading-[4.8rem] tracking-wider">
+                        <h2 className="md:w-[640px] text-5xl lg:text-6xl text-bannerText font-semibold leading-10 tracking-wider">
                             Desenvolvemos soluções para o seu negócio.
                         </h2>
-                        <h5 className="mt-6 mb-8 text-2xl text-bannerText font-semibold tracking-wider">
+                        <h5 className="mt-6 mb-8 text-xl md:text-2xl text-bannerText font-semibold tracking-wider">
                             Soluções web personalizadas.
                         </h5>
-                        <button className="px-10 py-4 font-bold leading-6 tracking-wider text-lg text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                        <button className="px-10 py-4 font-bold leading-6 tracking-wider text-base md:text-lg text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             Saiba Mais
                         </button>
                     </div>
                     <div>
-                        <img className="hidden w-full md:block" src="./src/assets/images/banners/web-options.svg" alt="" />
+                        <img className="hidden w-full md:block" src="../../assets/images/banners/web-options.svg" alt="" />
                     </div>
                 </section>
 
@@ -123,7 +123,7 @@ export default function InitialPage() {
                     </div>
                 </section> */}
 
-                <section id="services-section" className="relative py-32 px-4 md:px-20 space-y-20 bg-gradient-to-b from-indigo-500 to-blue-600">
+                <section id="services-section" className="relative py-32 pt-16 px-4 md:px-20 space-y-20 bg-gradient-to-b from-indigo-500 to-blue-600">
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-no-repeat bg-cover bg-center"></div>
 
                     <h3 className="relative text-5xl text-primaryText text-center font-semibold tracking-wider">
@@ -259,7 +259,7 @@ export default function InitialPage() {
                         Nossos Projetos
                     </h3>
 
-                    <div className="relative services-list flex flex-wrap py-10 md:px-6 mb-10 gap-16">
+                    <div className="relative services-list flex flex-wrap py-10 md:px-6 mb-10 gap-16 md:gap-0">
                         {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-cover bg-no-repeat bg-center"></div> */}
 
                         <div className="md:w-1/2">
@@ -438,7 +438,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <footer className="relative py-8 pb-24 md:pb-8 px-4 md:px-28 flex flex-col md:flex-row items-center justify-between gap-16">
+                <footer className="relative py-24 pb-24 md:pb-16 px-4 md:px-28 flex flex-col md:flex-row items-center justify-between gap-16">
                     <div>
                         <a href="#">
                             <img className="w-32" src="./public/logo-vertical-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
