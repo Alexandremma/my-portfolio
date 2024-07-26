@@ -6,7 +6,7 @@ export default function InitialPage() {
             <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-8 md:px-16 py-5 flex items-center justify-between bg-bgTransparent">
                 <div className="logo-container">
                     <a href="#">
-                        <img className="w-32" src="./public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
+                        <img className="w-32" src="public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
                     </a>
                 </div>
 
