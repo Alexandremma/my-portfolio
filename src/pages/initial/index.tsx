@@ -64,7 +64,7 @@ export default function InitialPage() {
                         </button>
                     </div>
                     <div>
-                        <img className="hidden w-full md:block" src="assets/images/banners/web-options.svg" alt="" />
+                        <img className="hidden w-full md:block" src="src/assets/images/banners/web-options.svg" alt="" />
                     </div>
                 </section>
 
