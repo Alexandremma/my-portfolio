@@ -3,7 +3,7 @@ import { ChevronDown, CircleCheck, CircleChevronRight, CircleHelp, Github, Insta
 export default function InitialPage() {
     return (
         <div className="max-w-screen-2xl mx-auto">
-            <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-6 md:px-24 py-5 flex items-center justify-between bg-bgTransparent">
+            <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-8 md:px-16 py-5 flex items-center justify-between bg-bgTransparent">
                 <div className="logo-container">
                     <a href="#">
                         <img className="w-32" src="./public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
@@ -49,11 +49,11 @@ export default function InitialPage() {
 
                 </section>
 
-                <section id="initial-banner-section" className="relative w-full h-[760px] flex items-center pt-8 px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="initial-banner-section" className="relative w-full h-[760px] flex items-center pt-8 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-cover bg-no-repeat bg-center"></div> */}
 
                     <div className="relative">
-                        <h2 className="w-[700px] text-6xl text-bannerText font-semibold leading-[4.8rem] tracking-wider">
+                        <h2 className="md:w-[640px] text-5xl lg:text-6xl text-bannerText font-semibold leading-[4.8rem] tracking-wider">
                             Desenvolvemos soluções para o seu negócio.
                         </h2>
                         <h5 className="mt-6 mb-8 text-2xl text-bannerText font-semibold tracking-wider">
@@ -64,7 +64,7 @@ export default function InitialPage() {
                         </button>
                     </div>
                     <div>
-                        <img className="w-full" src="./src/assets/images/banners/web-options.svg" alt="" />
+                        <img className="hidden w-full md:block" src="./src/assets/images/banners/web-options.svg" alt="" />
                     </div>
                 </section>
 
@@ -123,16 +123,16 @@ export default function InitialPage() {
                     </div>
                 </section> */}
 
-                <section id="services-section" className="relative py-32 px-20 space-y-20 bg-gradient-to-b from-indigo-500 to-blue-600">
+                <section id="services-section" className="relative py-32 px-4 md:px-20 space-y-20 bg-gradient-to-b from-indigo-500 to-blue-600">
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-no-repeat bg-cover bg-center"></div>
 
                     <h3 className="relative text-5xl text-primaryText text-center font-semibold tracking-wider">
                         Serviços v2
                     </h3>
 
-                    <div className="relative services-list px-6 flex flex-wrap">
-                        <div className="w-1/2">
-                            <div className="mr-4 mb-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                    <div className="relative services-list px-6 flex flex-wrap gap-8 md:gap-0">
+                        <div className="md:w-1/2">
+                            <div className="md:mr-4 md:mb-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="flex items-center gap-2">
                                     <div className="w-6 h-0.5 rounded-full bg-secondaryText"></div>
                                     <span className="text-secondaryText">01</span>
@@ -146,8 +146,8 @@ export default function InitialPage() {
                             </div>
                         </div>
 
-                        <div className="w-1/2">
-                            <div className="ml-4 mb-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <div className="md:ml-4 md:mb-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="flex items-center gap-2">
                                     <div className="w-6 h-0.5 rounded-full bg-secondaryText"></div>
                                     <span className="text-secondaryText">02</span>
@@ -161,8 +161,8 @@ export default function InitialPage() {
                             </div>
                         </div>
 
-                        <div className="w-1/2">
-                            <div className="mt-4 mr-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <div className="md:mt-4 md:mr-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="flex items-center gap-2">
                                     <div className="w-6 h-0.5 rounded-full bg-secondaryText"></div>
                                     <span className="text-secondaryText">03</span>
@@ -176,8 +176,8 @@ export default function InitialPage() {
                             </div>
                         </div>
 
-                        <div className="w-1/2">
-                            <div className="mt-4 ml-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <div className="md:mt-4 md:ml-4 flex flex-col gap-5 service-card p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="flex items-center gap-2">
                                     <div className="w-6 h-0.5 rounded-full bg-secondaryText"></div>
                                     <span className="text-secondaryText">04</span>
@@ -200,15 +200,15 @@ export default function InitialPage() {
                 </section>
 
                 {/* <section id="qualities-section" className="relative py-32 px-20 flex items-center justify-center gap-20 bg-element-02 bg-no-repeat bg-cover bg-center"> */}
-                <section id="qualities-section" className="relative py-40 px-20 flex items-center justify-center gap-20 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="qualities-section" className="relative py-32 md:py-40 px-4 md:px-20 flex flex-col md:flex-row items-center justify-center gap-20 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 right-0 left-0 bottom-0 bg-element-02 bg-no-repeat bg-cover bg-center bg-fixed"></div> */}
 
-                    <div className="relative w-1/2">
+                    <div className="relative md:w-1/2 text-center md:text-left">
                         <h3 className="text-4xl text-white font-bold tracking-[16px] leading-[60px]">
                             QUALIDADE <br /> GARANTIDA
                         </h3>
 
-                        <p className="mt-6 mb-10 text-white">
+                        <p className="mt-6 mb-10 px-6 md:px-0 text-white">
                             Tratamos cada projeto com sua devida importância e só finalizamos <br /> o projeto quando
                             o cliente está satisfeito.
                         </p>
@@ -251,7 +251,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <section id="projects-section" className="relative py-32 px-20 bg-gradient-to-b from-indigo-500 to-blue-600">
+                <section id="projects-section" className="relative py-32 px-4 md:px-20 bg-gradient-to-b from-indigo-500 to-blue-600">
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-left-top"></div>
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-right-bottom"></div>
 
@@ -259,11 +259,11 @@ export default function InitialPage() {
                         Nossos Projetos
                     </h3>
 
-                    <div className="relative services-list flex flex-wrap py-10 px-6 mb-10">
+                    <div className="relative services-list flex flex-wrap py-10 md:px-6 mb-10 gap-16">
                         {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-cover bg-no-repeat bg-center"></div> */}
 
-                        <div className="w-1/2">
-                            <a href="https://horizonseg.com.br" target="_blank" className="block mb-6 mr-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <a href="https://horizonseg.com.br" target="_blank" className="block md:mb-6 md:mr-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-72 rounded-3xl" src="./src/assets/images/projects/horizonseg-project.png" alt="Projeto HorizonSeg" />
                                 </div>
@@ -278,8 +278,8 @@ export default function InitialPage() {
                             </a>
                         </div>
 
-                        <div className="w-1/2">
-                            <a href="https://helensantosoftalmologia.com.br" target="_blank" className="block mb-6 ml-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <a href="https://helensantosoftalmologia.com.br" target="_blank" className="block md:mb-6 md:ml-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-72 rounded-3xl" src="./src/assets/images/projects/helen-project.png" alt="Projeto Helen Santos" />
                                 </div>
@@ -294,8 +294,8 @@ export default function InitialPage() {
                             </a>
                         </div>
 
-                        <div className="w-1/2">
-                            <a href="https://betemorais.com.br" target="_blank" className="block mt-6 mr-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <a href="https://betemorais.com.br" target="_blank" className="block md:mt-6 md:mr-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-72 rounded-3xl" src="./src/assets/images/projects/betemorais-project.png" alt="Projeto Bete Morais" />
                                 </div>
@@ -310,8 +310,8 @@ export default function InitialPage() {
                             </a>
                         </div>
 
-                        <div className="w-1/2">
-                            <a href="https://tatica-consultoria.vercel.app/" target="_blank" className="block mt-6 ml-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
+                        <div className="md:w-1/2">
+                            <a href="https://tatica-consultoria.vercel.app/" target="_blank" className="block md:mt-6 md:ml-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-72 rounded-3xl" src="./src/assets/images/projects/tatica-project.png" alt="Projeto HorizonSeg" />
                                 </div>
@@ -335,13 +335,13 @@ export default function InitialPage() {
                 </section>
 
                 {/* <section id="contact-section" className="relative py-32 px-20 space-y-20 bg-white"> */}
-                <section id="contact-section" className="relative pt-16 pb-32 px-20 space-y-20 bg-gradient-to-t from-indigo-500 to-blue-600">
-                    <div className="relative py-10 px-6 flex items-center justify-center gap-16">
+                <section id="contact-section" className="pt-16 pb-32 px-4 md:px-20 space-y-20 bg-gradient-to-t from-indigo-500 to-blue-600">
+                    <div className="py-10 px-6 flex items-center justify-center md:gap-16">
                         <div className="">
-                            <img src="./src/assets/images/elements/Contato-Elemento.svg" alt="" />
+                            <img className="hidden md:block" src="./src/assets/images/elements/Contato-Elemento.svg" alt="" />
                         </div>
 
-                        <form className="w-1/2 space-y-14">
+                        <form className="md:w-1/2 space-y-14">
                             <div className="space-y-8">
                                 <h3 className="relative text-5xl text-white text-center font-semibold tracking-wider">
                                     Entrar Em Contato
@@ -353,33 +353,33 @@ export default function InitialPage() {
                             </div>
 
                             <div className="space-y-8">
-                                <div className="flex items-center gap-8">
-                                    <div className="h-11 px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
+                                <div className="flex flex-col lg:flex-row lg:items-center gap-8">
+                                    <div className="px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
                                         <label htmlFor="name">
                                             <User className="size-5 text-inputIconBg" />
                                         </label>
-                                        <input id="name" type="text" name="name" placeholder="Digite seu nome" className="w-full bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
+                                        <input id="name" type="text" name="name" placeholder="Digite seu nome" className="w-full h-11 bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
                                     </div>
-                                    <div className="h-11 px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
+                                    <div className="px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
                                         <label htmlFor="email">
                                             <Mail className="size-5 text-inputIconBg" />
                                         </label>
-                                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" className="w-full bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
+                                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" className="w-full h-11 bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
                                     </div>
                                 </div>
                                 
-                                <div className="flex items-center gap-8">
-                                    <div className="h-11 px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
+                                <div className="flex flex-col lg:flex-row lg:items-center gap-8">
+                                    <div className="px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
                                         <label htmlFor="phone">
                                             <Smartphone className="size-5 text-inputIconBg" />
                                         </label>
-                                        <input id="phone" type="text" name="phone" placeholder="Digite seu celular" className="w-full bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
+                                        <input id="phone" type="text" name="phone" placeholder="Digite seu celular" className="w-full h-11 bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
                                     </div>
-                                    <div className="h-11 px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
+                                    <div className="px-4 flex items-center gap-3 flex-1 bg-inputBg rounded-lg border border-white">
                                         <label htmlFor="city">
                                             <MapPin className="size-5 text-inputIconBg" />
                                         </label>
-                                        <input id="city" type="text" name="city" placeholder="Digite sua cidade" className="w-full bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
+                                        <input id="city" type="text" name="city" placeholder="Digite sua cidade" className="w-full h-11 bg-transparent text-lg outline-none placeholder-inputPlaceholderText" />
                                     </div>
                                 </div>
                                 
@@ -400,7 +400,7 @@ export default function InitialPage() {
             {/* <div className="relative bg-gradient-to-b from-indigo-500 to-blue-600"> */}
                 <div className="absolute top-0 right-0 left-0 bottom-0 bg-gradient-to-b from-indigo-500 to-blue-600 opacity-90"></div>
 
-                <section id="faq-section" className="relative py-32 px-20 space-y-20">
+                <section id="faq-section" className="relative py-32 px-4 md:px-20 space-y-20">
                     <h3 className="text-5xl text-primaryText text-center font-semibold tracking-wider">
                         Perguntas Frequentes
                     </h3>
@@ -438,7 +438,7 @@ export default function InitialPage() {
                     </div>
                 </section>
 
-                <footer className="relative py-8 px-28 flex items-center justify-between">
+                <footer className="relative py-8 pb-24 md:pb-8 px-4 md:px-28 flex flex-col md:flex-row items-center justify-between gap-16">
                     <div>
                         <a href="#">
                             <img className="w-32" src="./public/logo-vertical-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
