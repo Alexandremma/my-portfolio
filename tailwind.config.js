@@ -122,6 +122,7 @@ export default {
         'element-03': "url('./src/assets/images/elements/Contato-Elemento.svg')",
         'element-04': "url('./src/assets/images/elements/Contato-Elemento-2.svg')",
         'element-05': "url('./src/assets/images/elements/Contato-Elemento-3.svg')",
+        'background-image-01': "url('./src/assets/images/banners/web-options.svg')",
       }
     },
   },
