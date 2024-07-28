@@ -1,17 +1,57 @@
-import { ChevronDown, CircleCheck, CircleChevronRight, CircleHelp, Github, Instagram, Linkedin, Mail, MapPin, Menu, Smartphone, User } from "lucide-react";
+import { ChevronDown, CircleCheck, CircleChevronRight, CircleHelp, Github, Instagram, Linkedin, Mail, MapPin, Menu, Smartphone, User, X } from "lucide-react";
+import { useState } from "react";
 
 export default function InitialPage() {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isQuestionOpen, setIsQuestionOpen] = useState(false);
+
+    const openMobileMenu = () => {
+        setIsMobileMenuOpen(true);
+    }
+
+    const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+    }
+
+    const clickQuestion = () => {
+        setIsQuestionOpen(!isQuestionOpen);
+    }
+
     return (
         <div className="max-w-screen-2xl mx-auto w-full">
-            <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-8 md:px-16 py-5 flex items-center justify-between bg-bgTransparent">
+            <header className="w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-20 px-8 md:px-12 lg:px-16 py-5 flex items-center justify-between bg-bgTransparent">
                 <div className="logo-container">
                     <a href="#">
                         <img className="w-32" src="./dist/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
                     </a>
                 </div>
 
-                <div className="lg:hidden">
+                <div onClick={openMobileMenu} className="lg:hidden">
                     <Menu className="size-8" />
+                </div>
+
+                <div className={`lg:hidden absolute ${isMobileMenuOpen ? 'right-0' : 'right-[-1000px]'} top-0 w-full py-8 transition-all duration-500 ease-in bg-secondaryTransparent`}>
+                    <nav className="">
+                        <ul className="flex flex-col items-center gap-8">
+                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                                <a href="#initial-banner-section">Início</a>
+                            </li>
+                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                                <a href="#services-section">Serviços</a>
+                            </li>
+                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                                <a href="#projects-section">Projetos</a>
+                            </li>
+                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                                <a href="#contact-section">Contato</a>
+                            </li>
+                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                                <a href="#faq-section">Faq</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <X onClick={closeMobileMenu} className="absolute top-7 right-8 md:right-12 size-8 text-menuText" />
                 </div>
 
                 <div className="hidden lg:flex items-center gap-20">
@@ -53,10 +93,10 @@ export default function InitialPage() {
                     {/* <div className="absolute top-0 bottom-0 left-0 right-28 bg-background-image-01 bg-no-repeat bg-right"></div> */}
 
                     <div className="relative z-10">
-                        <h2 className="md:w-[640px] text-[32px] lg:text-6xl text-bannerText font-bold lg:leading-snug leading-normal tracking-wider">
-                            Desenvolvemos soluções para o seu negócio.
+                        <h2 className="md:w-[640px] text-[32px] md:text-4xl lg:text-6xl text-bannerText font-bold md:leading-snug leading-normal tracking-wider">
+                            Desenvolvemos soluções <br className="hidden md:block lg:hidden" /> para o seu negócio.
                         </h2>
-                        <h5 className="mt-4 mb-6 md:mt-6 md:mb-8 text-lg md:text-2xl text-bannerText font-semibold tracking-wider">
+                        <h5 className="mt-4 mb-6 md:mt-6 md:mb-8 text-lg md:text-xl lg:text-2xl text-bannerText font-semibold tracking-wider">
                             Soluções web personalizadas.
                         </h5>
                         <button className="px-10 py-3 md:py-4 font-bold leading-6 tracking-wider text-base md:text-lg text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
@@ -65,7 +105,7 @@ export default function InitialPage() {
                     </div>
 
                     <div className="">
-                        <img className="md:block" src="./dist/web-options.svg" alt="" />
+                        <img className="md:block" src="./src/assets/images/banners/web-options.svg" alt="" />
                     </div>
                 </section>
 
@@ -201,11 +241,11 @@ export default function InitialPage() {
                 </section>
 
                 {/* <section id="qualities-section" className="relative py-32 px-20 flex items-center justify-center gap-20 bg-element-02 bg-no-repeat bg-cover bg-center"> */}
-                <section id="qualities-section" className="relative py-32 md:py-40 px-4 md:px-20 flex flex-col md:flex-row items-center justify-center gap-20 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="qualities-section" className="relative py-32 lg:py-40 px-4 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-20 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 right-0 left-0 bottom-0 bg-element-02 bg-no-repeat bg-cover bg-center bg-fixed"></div> */}
 
-                    <div className="relative md:w-1/2 text-center md:text-left">
-                        <h3 className="text-4xl md:text-5xl text-white font-bold tracking-[12px] md:tracking-[16px] leading-[54px] md:leading-[60px]">
+                    <div className="relative lg:w-1/2 text-center lg:text-left">
+                        <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold tracking-[12px] md:tracking-[16px] leading-[54px] md:leading-[60px]">
                             QUALIDADE <br /> GARANTIDA
                         </h3>
 
@@ -215,7 +255,7 @@ export default function InitialPage() {
                         </p>
 
                         <button className="font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
-                            <a href="#projects-section" className="block pt-3.5 pb-3 px-20">
+                            <a href="#projects-section" className="block pt-3.5 pb-3 px-14 lg:px-20">
                                 Veja nossos projetos
                             </a>
                         </button>
@@ -342,7 +382,7 @@ export default function InitialPage() {
                             <img className="hidden lg:block" src="./src/assets/images/elements/Contato-Elemento.svg" alt="" />
                         </div>
 
-                        <form className="lg:w-1/2 space-y-10 md:space-y-14">
+                        <form className="lg:w-2/3 space-y-10 md:space-y-14">
                             <div className="space-y-4 md:space-y-8">
                                 <h3 className="relative text-[40px] md:text-5xl text-white text-center font-semibold tracking-wider">
                                     Entrar Em Contato
@@ -389,7 +429,7 @@ export default function InitialPage() {
                                 </div>
 
                                 <div className="text-right">
-                                    <button type="submit" className="w-full md:w-auto py-2 md:px-16 text-lg font-bold bg-buttonFormBg rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
+                                    <button type="submit" className="w-full md:w-auto py-4 md:py-2 md:px-16 text-lg font-bold bg-buttonFormBg rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
                                         Enviar
                                     </button>
                                 </div>
@@ -409,6 +449,21 @@ export default function InitialPage() {
                     </h3>
 
                     <div className="questions-list md:px-6 space-y-4">
+
+                        <div className="question-item py-4 px-8 bg-questionBg rounded-2xl shadow-shape2">
+                            <button onClick={clickQuestion} className="w-full flex items-center gap-5">
+                                <CircleHelp className="text-contentText size-8" />
+                                <span className="flex-1 md:text-lg text-left text-contentText font-bold">Quanto tempo leva para desenvolver meu site?</span>
+                                <ChevronDown className="size-8 text-contentText font-bold" />
+                            </button>
+
+                            <div className={`overflow-hidden grid transition-all duration-300 ease-in-out ${isQuestionOpen ? 'grid-rows-[1fr] opacity-100 pt-6' : 'grid-rows-[0fr] opacity-0'}`}>
+                                <div className="overflow-hidden pl-4 text-sm md:text-base">
+                                    A resposta para essa pergunta é um pouco longa, para eu ver como fica o layout da resposta para uma frase maior.
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
                             <CircleHelp className="text-contentText size-8" />
                             <span className="flex-1 md:text-lg text-contentText font-semibold">Quanto tempo leva para desenvolver meu site?</span>
@@ -456,11 +511,11 @@ export default function InitialPage() {
                             <span>alexandremmac@gmail.com</span>
                         </div>
                     </div>
-                    <div className="flex flex-col items-start gap-4">
+                    <div className="flex flex-col items-center md:items-start gap-4">
                         <h5 className="text-2xl font-bold">
                             Redes Sociais
                         </h5>
-                        <div className="social-media-list flex items-center gap-6">
+                        <div className="social-media-list flex items-center justify-center gap-6">
                             <a href="https://www.linkedin.com/in/alexandre-martins-maciel-78379b152/" target="_blank">
                                 <Linkedin className="text-contentText size-7" />
                             </a>

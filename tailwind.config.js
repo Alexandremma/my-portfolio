@@ -11,7 +11,7 @@ export default {
       },
       colors: {
         primaryTransparent: 'rgb(255,255,255,0.4)', // menu cinza transparente
-        secondaryTransparent: 'rgb(0,0,0,0.5)',
+        secondaryTransparent: 'rgb(0,0,0,0.7)',
         otherTransparent: '#2863EB95',
         bgTransparent: '',
         // rgb(89, 91, 115, 0.5) - transparente
