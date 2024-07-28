@@ -31,7 +31,7 @@ export default function InitialPage() {
                     <Menu className="size-8" />
                 </div>
 
-                <div className={`lg:hidden absolute ${isMobileMenuOpen ? 'right-0' : 'right-[-1000px]'} top-0 w-full py-10 transition-all duration-500 ease-in bg-gradient-to-b from-indigo-500 to-blue-600`}>
+                <div className={`lg:hidden absolute ${isMobileMenuOpen ? 'right-0' : 'right-[-1000px]'} top-0 w-full pt-10 pb-12 transition-all duration-500 ease-in bg-gradient-to-b from-indigo-500 to-blue-600`}>
                     <nav className="">
                         <ul className="flex flex-col items-center gap-8">
                             <li onClick={closeMobileMenu} className="py-2 text-center text-2xl text-menuText font-semibold transition hover:text-menuHighlight">
@@ -98,7 +98,7 @@ export default function InitialPage() {
 
                 </section>
 
-                <section id="initial-banner-section" className="relative w-full h-screen md:h-[640px] lg:h-[720px] flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-0 pt-8 md:pt-40 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="initial-banner-section" className="relative w-full h-screen md:h-[640px] lg:h-[720px] flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-0 pt-8 md:pt-24 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 bottom-0 left-0 right-28 bg-background-image-01 bg-no-repeat bg-right"></div> */}
 
                     <div className="relative z-10">
@@ -114,7 +114,7 @@ export default function InitialPage() {
                     </div>
 
                     <div className="">
-                        <img className="md:block" src="./src/assets/images/banners/web-options.svg" alt="" />
+                        <img className="md:block" src="src/assets/images/banners/web-options.svg" alt="" />
                     </div>
                 </section>
 
@@ -315,7 +315,7 @@ export default function InitialPage() {
                         <div className="md:w-1/2">
                             <a href="https://horizonseg.com.br" target="_blank" className="block md:mb-6 md:mr-6 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                                 <div className="rounded-t-full bg-projectBg">
-                                    <img className="w-full h-56 md:h-72 rounded-3xl" src="./src/assets/images/projects/horizonseg-project.png" alt="Projeto HorizonSeg" />
+                                    <img className="w-full h-56 md:h-72 rounded-3xl" src="logo-vertical-branca-completa-sem-fundo.png" alt="Projeto HorizonSeg" />
                                 </div>
 
                                 <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
