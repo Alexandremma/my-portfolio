@@ -6,7 +6,7 @@ export default function InitialPage() {
             <header className="max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-10 px-8 md:px-16 py-5 flex items-center justify-between bg-bgTransparent">
                 <div className="logo-container">
                     <a href="#">
-                        <img className="w-32" src="public/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
+                        <img className="w-32" src="./dist/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
                     </a>
                 </div>
 
@@ -49,7 +49,7 @@ export default function InitialPage() {
 
                 </section>
 
-                <section id="initial-banner-section" className="relative w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-0 pt-8 px-6 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="initial-banner-section" className="relative w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-0 pt-8 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 bottom-0 left-0 right-28 bg-background-image-01 bg-no-repeat bg-right"></div> */}
 
                     <div className="relative z-10">
@@ -65,7 +65,7 @@ export default function InitialPage() {
                     </div>
 
                     <div className="">
-                        <img className="md:block" src="src/assets/images/banners/web-options.svg" alt="" />
+                        <img className="md:block" src="./dist/web-options.svg" alt="" />
                     </div>
                 </section>
 
@@ -127,7 +127,7 @@ export default function InitialPage() {
                 <section id="services-section" className="relative py-32 pt-16 px-6 md:px-16 space-y-12 md:space-y-20 bg-gradient-to-b from-indigo-500 to-blue-600">
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-no-repeat bg-cover bg-center"></div>
 
-                    <h3 className="relative text-4xl md:text-5xl text-primaryText text-center font-semibold tracking-wider">
+                    <h3 className="relative text-[40px] md:text-5xl text-primaryText text-center font-semibold tracking-wider">
                         Serviços
                     </h3>
 
@@ -205,7 +205,7 @@ export default function InitialPage() {
                     {/* <div className="absolute top-0 right-0 left-0 bottom-0 bg-element-02 bg-no-repeat bg-cover bg-center bg-fixed"></div> */}
 
                     <div className="relative md:w-1/2 text-center md:text-left">
-                        <h3 className="text-3xl md:text-4xl text-white font-bold tracking-[12px] md:tracking-[16px] leading-[54px] md:leading-[60px]">
+                        <h3 className="text-4xl md:text-5xl text-white font-bold tracking-[12px] md:tracking-[16px] leading-[54px] md:leading-[60px]">
                             QUALIDADE <br /> GARANTIDA
                         </h3>
 
@@ -329,7 +329,7 @@ export default function InitialPage() {
                     </div>
 
                     <div className="relative text-center">
-                        <button className="w-full md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                        <button className="w-full md:w-auto md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             Quero construir meu Site
                         </button>
                     </div>
@@ -339,10 +339,10 @@ export default function InitialPage() {
                 <section id="contact-section" className="pt-16 pb-32 px-4 md:px-20 space-y-20 bg-gradient-to-t from-indigo-500 to-blue-600">
                     <div className="py-10 px-4 flex items-center justify-center md:gap-16">
                         <div className="">
-                            <img className="hidden md:block" src="./src/assets/images/elements/Contato-Elemento.svg" alt="" />
+                            <img className="hidden lg:block" src="./src/assets/images/elements/Contato-Elemento.svg" alt="" />
                         </div>
 
-                        <form className="md:w-1/2 space-y-10 md:space-y-14">
+                        <form className="lg:w-1/2 space-y-10 md:space-y-14">
                             <div className="space-y-4 md:space-y-8">
                                 <h3 className="relative text-[40px] md:text-5xl text-white text-center font-semibold tracking-wider">
                                     Entrar Em Contato
@@ -389,7 +389,9 @@ export default function InitialPage() {
                                 </div>
 
                                 <div className="text-right">
-                                    <button type="submit" className="w-full md:w-auto py-3 px-12 text-lg font-bold bg-buttonFormBg rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">Enviar</button>
+                                    <button type="submit" className="w-full md:w-auto py-2 md:px-16 text-lg font-bold bg-buttonFormBg rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
+                                        Enviar
+                                    </button>
                                 </div>
                             </div>
                         </form>
