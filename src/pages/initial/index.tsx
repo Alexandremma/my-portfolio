@@ -1,9 +1,10 @@
-import { ChevronDown, CircleCheck, CircleChevronRight, CircleHelp, Github, Instagram, Linkedin, Mail, MapPin, Menu, Smartphone, User, X } from "lucide-react";
+import { CircleChevronRight, Github, Instagram, Linkedin, Mail, MapPin, Menu, Smartphone, User, X } from "lucide-react";
 import { useState } from "react";
+import AccordionComponent from "../../components/accordion";
 
 export default function InitialPage() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isQuestionOpen, setIsQuestionOpen] = useState(false);
+    // const [isQuestionOpen, setIsQuestionOpen] = useState(false);
 
     const openMobileMenu = () => {
         setIsMobileMenuOpen(true);
@@ -13,9 +14,9 @@ export default function InitialPage() {
         setIsMobileMenuOpen(false);
     }
 
-    const clickQuestion = () => {
-        setIsQuestionOpen(!isQuestionOpen);
-    }
+    // const clickQuestion = () => {
+    //     setIsQuestionOpen(!isQuestionOpen);
+    // }
 
     return (
         <div className="max-w-screen-2xl mx-auto w-full">
@@ -30,24 +31,32 @@ export default function InitialPage() {
                     <Menu className="size-8" />
                 </div>
 
-                <div className={`lg:hidden absolute ${isMobileMenuOpen ? 'right-0' : 'right-[-1000px]'} top-0 w-full py-8 transition-all duration-500 ease-in bg-secondaryTransparent`}>
+                <div className={`lg:hidden absolute ${isMobileMenuOpen ? 'right-0' : 'right-[-1000px]'} top-0 w-full py-10 transition-all duration-500 ease-in bg-gradient-to-b from-indigo-500 to-blue-600`}>
                     <nav className="">
                         <ul className="flex flex-col items-center gap-8">
-                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                            <li onClick={closeMobileMenu} className="py-2 text-center text-2xl text-menuText font-semibold transition hover:text-menuHighlight">
                                 <a href="#initial-banner-section">Início</a>
                             </li>
-                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                            
+                            <li onClick={closeMobileMenu} className="py-2 text-center text-2xl text-menuText font-semibold transition hover:text-menuHighlight">
                                 <a href="#services-section">Serviços</a>
                             </li>
-                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                            
+                            <li onClick={closeMobileMenu} className="py-2 text-center text-2xl text-menuText font-semibold transition hover:text-menuHighlight">
                                 <a href="#projects-section">Projetos</a>
                             </li>
-                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                            
+                            <li onClick={closeMobileMenu} className="py-2 text-center text-2xl text-menuText font-semibold transition hover:text-menuHighlight">
                                 <a href="#contact-section">Contato</a>
                             </li>
-                            <li className="w-full py-2 text-center text-lg text-menuText font-semibold transition hover:text-menuHighlight">
+                            
+                            <li onClick={closeMobileMenu} className="py-2 text-center text-2xl text-menuText font-semibold transition hover:text-menuHighlight">
                                 <a href="#faq-section">Faq</a>
                             </li>
+
+                            <button className="px-10 pt-[18px] pb-4 leading-none text-lg text-buttonText font-bold bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                                Entrar em Contato
+                            </button>
                         </ul>
                     </nav>
 
@@ -89,7 +98,7 @@ export default function InitialPage() {
 
                 </section>
 
-                <section id="initial-banner-section" className="relative w-full h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-0 pt-8 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="initial-banner-section" className="relative w-full h-screen md:h-[640px] lg:h-[720px] flex flex-col-reverse md:flex-row items-center justify-center gap-6 md:gap-0 pt-8 md:pt-40 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 bottom-0 left-0 right-28 bg-background-image-01 bg-no-repeat bg-right"></div> */}
 
                     <div className="relative z-10">
@@ -164,7 +173,7 @@ export default function InitialPage() {
                     </div>
                 </section> */}
 
-                <section id="services-section" className="relative py-32 pt-16 px-6 md:px-16 space-y-12 md:space-y-20 bg-gradient-to-b from-indigo-500 to-blue-600">
+                <section id="services-section" className="relative py-32 pt-16 px-6 md:px-16 space-y-12 bg-gradient-to-b from-indigo-500 to-blue-600">
                     <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-no-repeat bg-cover bg-center"></div>
 
                     <h3 className="relative text-[40px] md:text-5xl text-primaryText text-center font-semibold tracking-wider">
@@ -241,15 +250,15 @@ export default function InitialPage() {
                 </section>
 
                 {/* <section id="qualities-section" className="relative py-32 px-20 flex items-center justify-center gap-20 bg-element-02 bg-no-repeat bg-cover bg-center"> */}
-                <section id="qualities-section" className="relative py-32 lg:py-40 px-4 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-20 bg-gradient-to-t from-indigo-500 to-blue-600">
+                <section id="qualities-section" className="relative py-32 px-4 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-20 bg-gradient-to-t from-indigo-500 to-blue-600">
                     {/* <div className="absolute top-0 right-0 left-0 bottom-0 bg-element-02 bg-no-repeat bg-cover bg-center bg-fixed"></div> */}
 
                     <div className="relative lg:w-1/2 text-center lg:text-left">
-                        <h3 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold tracking-[12px] md:tracking-[16px] leading-[54px] md:leading-[60px]">
+                        <h3 className="text-3xl md:text-4xl xl:text-5xl text-white font-bold tracking-[12px] md:tracking-[16px] leading-[54px] md:leading-[60px]">
                             QUALIDADE <br /> GARANTIDA
                         </h3>
 
-                        <p className="mt-6 mb-10 px-6 md:px-0 leading-6 text-sm md:text-base text-white">
+                        <p className="mt-8 mb-10 px-6 md:px-0 leading-6 text-sm md:text-base text-white">
                             Tratamos cada projeto com sua devida importância e só finalizamos <br /> o projeto quando
                             o cliente está satisfeito.
                         </p>
@@ -308,13 +317,19 @@ export default function InitialPage() {
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-56 md:h-72 rounded-3xl" src="./src/assets/images/projects/horizonseg-project.png" alt="Projeto HorizonSeg" />
                                 </div>
+
                                 <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
                                     <h4 className="text-2xl md:text-3xl text-secondaryText font-semibold tracking-wider leading-8 md:leading-10">
                                         Site Institucional <br /> HorizonSeg
                                     </h4>
+
                                     <p className="text-sm text-contentText tracking-wide leading-6">
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, maiores perferendis, ducimus eum nam nostrum.
                                     </p>
+
+                                    <button className="">
+                                        Visitar Site
+                                    </button>
                                 </div>
                             </a>
                         </div>
@@ -324,6 +339,7 @@ export default function InitialPage() {
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-56 md:h-72 rounded-3xl" src="./src/assets/images/projects/helen-project.png" alt="Projeto Helen Santos" />
                                 </div>
+
                                 <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
                                     <h4 className="text-2xl md:text-3xl text-secondaryText font-semibold tracking-wider leading-8 md:leading-10">
                                         Landing Page <br /> Helen Santos
@@ -340,6 +356,7 @@ export default function InitialPage() {
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-56 md:h-72 rounded-3xl" src="./src/assets/images/projects/betemorais-project.png" alt="Projeto Bete Morais" />
                                 </div>
+
                                 <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
                                     <h4 className="text-2xl md:text-3xl text-secondaryText font-semibold tracking-wider leading-8 md:leading-10">
                                         Site Institucional <br /> Bete Morais
@@ -356,6 +373,7 @@ export default function InitialPage() {
                                 <div className="rounded-t-full bg-projectBg">
                                     <img className="w-full h-56 md:h-72 rounded-3xl" src="./src/assets/images/projects/tatica-project.png" alt="Projeto HorizonSeg" />
                                 </div>
+
                                 <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
                                     <h4 className="text-2xl md:text-3xl text-secondaryText font-semibold tracking-wider leading-8 md:leading-10">
                                         Site Institucional <br /> Tática Consultoria
@@ -449,9 +467,10 @@ export default function InitialPage() {
                     </h3>
 
                     <div className="questions-list md:px-6 space-y-4">
+                        <AccordionComponent question="Quanto tempo leva para desenvolver meu site?" answer="Depende do tamanho do projeto. Se for um projeto de uma página como uma Landing Page, leva aproximadamente 2 semanas. Para finalizar e ter mais uma linha para ver como fica." />
 
-                        <div className="question-item py-4 px-8 bg-questionBg rounded-2xl shadow-shape2">
-                            <button onClick={clickQuestion} className="w-full flex items-center gap-5">
+                        {/* <div className="question-item py-4 px-4 md:px-8 bg-questionBg rounded-2xl shadow-shape2">
+                            <button onClick={clickQuestion} className="w-full flex items-center gap-3 md:gap-5">
                                 <CircleHelp className="text-contentText size-8" />
                                 <span className="flex-1 md:text-lg text-left text-contentText font-bold">Quanto tempo leva para desenvolver meu site?</span>
                                 <ChevronDown className="size-8 text-contentText font-bold" />
@@ -462,37 +481,15 @@ export default function InitialPage() {
                                     A resposta para essa pergunta é um pouco longa, para eu ver como fica o layout da resposta para uma frase maior.
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
-                            <CircleHelp className="text-contentText size-8" />
-                            <span className="flex-1 md:text-lg text-contentText font-semibold">Quanto tempo leva para desenvolver meu site?</span>
-                            <ChevronDown className="size-8 text-contentText font-bold" />
-                        </div>
+                        <AccordionComponent question="Quais as tecnologias utilizadas no desenvolvimento do site?" answer="Depende do tamanho do projeto. Se for um projeto de uma página como uma Landing Page, leva aproximadamente 2 semanas. Para finalizar e ter mais uma linha para ver como fica." />
 
-                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
-                            <CircleHelp className="text-contentText size-8" />
-                            <span className="flex-1 md:text-lg text-contentText font-semibold">Quais as tecnologias utilizadas no desenvolvimento do site?</span>
-                            <ChevronDown className="size-8 text-contentText font-bold" />
-                        </div>
+                        <AccordionComponent question="Como é a comunicação ao longo da criação do site?" answer="Depende do tamanho do projeto. Se for um projeto de uma página como uma Landing Page, leva aproximadamente 2 semanas. Para finalizar e ter mais uma linha para ver como fica." />
+                        
+                        <AccordionComponent question="Meu site irá funcionar em celulares e tablets?" answer="Depende do tamanho do projeto. Se for um projeto de uma página como uma Landing Page, leva aproximadamente 2 semanas. Para finalizar e ter mais uma linha para ver como fica." />
 
-                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
-                            <CircleHelp className="text-contentText size-8" />
-                            <span className="flex-1 md:text-lg text-contentText font-semibold">Como é a comunicação ao longo da criação do site?</span>
-                            <ChevronDown className="size-8 text-contentText font-bold" />
-                        </div>
-
-                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
-                            <CircleCheck className="text-contentText size-8" />
-                            <span className="flex-1 md:text-lg text-contentText font-semibold">Meu site irá funcionar em celulares e tablets?</span>
-                            <ChevronDown className="size-8 text-contentText font-bold" />
-                        </div>
-
-                        <div className="question-item py-4 px-8 flex items-center gap-5 bg-questionBg rounded-2xl shadow-shape2">
-                            <CircleCheck className="text-contentText size-8" />
-                            <span className="flex-1 md:text-lg text-contentText font-semibold">Meu site vai aparecer no Google?</span>
-                            <ChevronDown className="size-8 text-contentText font-bold" />
-                        </div>
+                        <AccordionComponent question="Meu site vai aparecer no Google?" answer="Depende do tamanho do projeto. Se for um projeto de uma página como uma Landing Page, leva aproximadamente 2 semanas. Para finalizar e ter mais uma linha para ver como fica." />
                     </div>
                 </section>
 

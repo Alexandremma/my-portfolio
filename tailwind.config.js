@@ -45,8 +45,9 @@ export default {
         // #6A6CFF - roxo stormbrain
         // #BD71FF - rosa stormbrain
         projectBg: '#2863EB70',
-        questionBg: '#2863EB70',
-        // questionBg: 'rgb(4, 56, 115, 0.7)',
+        accordionBg: '#2863EB70',
+        accordionBorder: '#fff2',
+        // accordionBg: 'rgb(4, 56, 115, 0.7)',
         // d6e4ff - azul claro
         // 1a237e - azul escuro
         // FFD700 - amarelo dourado (complementar)
