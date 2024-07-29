@@ -243,7 +243,7 @@ export default function InitialPage() {
                     </div>
 
                     <div className="relative text-center">
-                        <button className="px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                        <button className="px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             Entrar em Contato
                         </button>
                     </div>
@@ -263,7 +263,7 @@ export default function InitialPage() {
                             o cliente está satisfeito.
                         </p>
 
-                        <button className="font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                        <button className="font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-400 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                             <a href="#projects-section" className="block pt-3.5 pb-3 px-14 lg:px-20">
                                 Veja nossos projetos
                             </a>
@@ -327,7 +327,7 @@ export default function InitialPage() {
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, maiores perferendis, ducimus eum nam nostrum.
                                     </p>
 
-                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                                         Visitar Site
                                     </button>
                                 </div>
@@ -349,7 +349,7 @@ export default function InitialPage() {
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, maiores perferendis, ducimus eum nam nostrum.
                                     </p>
 
-                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                                         Visitar Site
                                     </button>
                                 </div>
@@ -371,7 +371,7 @@ export default function InitialPage() {
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, maiores perferendis, ducimus eum nam nostrum.
                                     </p>
 
-                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                                         Visitar Site
                                     </button>
                                 </div>
@@ -393,7 +393,7 @@ export default function InitialPage() {
                                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, maiores perferendis, ducimus eum nam nostrum.
                                     </p>
 
-                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                                    <button className="md:w-[200px] mt-2 pt-2.5 pb-2 font-bold leading-6 tracking-wider text-sm md:text-base text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
                                         Visitar Site
                                     </button>
                                 </div>
@@ -462,7 +462,7 @@ export default function InitialPage() {
                                 </div>
 
                                 <div className="text-right">
-                                    <button type="submit" className="w-full md:w-auto py-4 md:py-2 md:px-16 text-lg font-bold bg-buttonFormBg rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
+                                    <button type="submit" className="w-full md:w-auto py-4 md:py-2 md:px-16 text-lg font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
                                         Enviar
                                     </button>
                                 </div>
