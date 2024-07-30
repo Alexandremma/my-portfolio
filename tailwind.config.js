@@ -73,6 +73,12 @@ export default {
         buttonFormBg: '#4F46E5',
         // #043873 - azul botão
         buttonFormHighlight: '#3730A3',
+        whatsappBg: '#25d366',
+        // #38D773
+        // #24CC63
+        // #17980E
+        // #28A219
+        // #25d366
         // -------------
         menuText: '#fff',
         menuHighlight: '#3730A3',

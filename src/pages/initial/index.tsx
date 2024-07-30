@@ -31,6 +31,10 @@ export default function InitialPage() {
 
                 <FooterComponent />
             </div>
+
+            <a href="https://api.whatsapp.com/send/?phone=5544999829545" target="_blank" className="fixed right-4 bottom-4 p-3 rounded-full bg-whatsappBg">
+                <img className="w-10" src="/whatsapp-05.png" alt="Logo do WhatsApp" />
+            </a>
         </div>
     )
 }

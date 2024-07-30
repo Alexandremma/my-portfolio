@@ -1,6 +1,6 @@
 export default function ServiceBannerComponent() {
     return (
-        <section id="services-section" className="relative py-32 pt-16 px-6 md:px-8 lg:px-16 space-y-12 bg-gradient-to-b from-indigo-500 to-blue-600">
+        <section id="services-section" className="relative py-32 pt-16 px-6 md:px-8 lg:px-16 flex flex-col gap-16 bg-gradient-to-b from-indigo-500 to-blue-600">
             <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-01 bg-no-repeat bg-cover bg-center"></div>
 
             <h3 className="relative text-[40px] md:text-5xl text-primaryText text-center font-semibold tracking-wider">
@@ -77,10 +77,12 @@ export default function ServiceBannerComponent() {
                 </div>
             </div>
 
-            <div className="relative text-center">
-                <button className="px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
-                    Entrar em Contato
-                </button>
+            <div className="relative mt-6 text-center">
+                {/* <button className="px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight"> */}
+                    <a href="https://api.whatsapp.com/send/?phone=5544999829545" target="_blank" className="px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                        Entrar em Contato
+                    </a>
+                {/* </button> */}
             </div>
         </section>
     )

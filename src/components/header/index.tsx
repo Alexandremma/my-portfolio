@@ -47,9 +47,11 @@ export default function HeaderComponent() {
                             <a href="#faq-section">Faq</a>
                         </li>
 
-                        <button className="px-10 pt-[18px] pb-4 leading-none text-lg text-buttonText font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
-                            Entrar em Contato
-                        </button>
+                        {/* <button className="px-10 pt-[18px] pb-4 leading-none text-lg text-buttonText font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight"> */}
+                            <a href="https://api.whatsapp.com/send/?phone=5544999829545" className="px-10 pt-[18px] pb-4 leading-none text-lg text-buttonText font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                                Entrar em Contato
+                            </a>
+                        {/* </button> */}
                     </ul>
                 </nav>
 
@@ -77,9 +79,11 @@ export default function HeaderComponent() {
                     </ul>
                 </nav>
 
-                <button className="px-10 pt-3.5 pb-3 leading-none text-sm text-buttonText font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
-                    Entrar em Contato
-                </button>
+                {/* <button className="px-10 pt-3.5 pb-3 leading-none text-sm text-buttonText font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight"> */}
+                    <a href="https://api.whatsapp.com/send/?phone=5544999829545" target="_blank" className="px-10 pt-3 pb-2.5 leading-none text-sm text-buttonText font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                        Entrar em Contato
+                    </a>
+                {/* </button> */}
             </div>
         </header>
     )

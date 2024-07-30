@@ -92,7 +92,7 @@ export default function FormComponent() {
                 </div>
 
                 <div className="text-right">
-                    <button type="submit" className="w-full md:w-auto py-4 md:py-2 md:px-16 text-lg font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
+                    <button type="submit" className="w-full md:w-auto py-3 md:py-2 md:px-16 text-lg font-bold bg-gradient-to-t from-indigo-500 to-blue-400 rounded-lg shadow-shape3 transition hover:bg-buttonFormHighlight">
                         Enviar
                     </button>
                 </div>
