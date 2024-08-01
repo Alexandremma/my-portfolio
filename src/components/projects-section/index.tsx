@@ -7,7 +7,6 @@ import BgProjects from '../../assets/images/elements/BG-Elemento-2.svg';
 export default function ProjectsSectionComponent() {
     return (
         <section id="projects-section" className="relative py-32 px-5 md:px-8 lg:px-20 bg-gradient-to-b from-indigo-500 to-blue-600">
-            {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-left-top"></div> */}
             <img className="absolute top-0 left-0" src={BgProjects}></img>
             <img className="absolute bottom-0 right-0" src={BgProjects}></img>
 

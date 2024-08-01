@@ -12,11 +12,9 @@ export default function BannerSectionComponent() {
                     Soluções web personalizadas.
                 </h5>
                 
-                {/* <button className="px-10 py-3 md:py-4 font-bold leading-6 tracking-wider text-base md:text-lg text-buttonText bg-gradient-to-t from-indigo-400 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight"> */}
-                    <a href="#projects-section" className="px-10 py-3 md:py-4 font-bold leading-6 tracking-wider text-base md:text-lg text-buttonText bg-gradient-to-t from-indigo-400 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
-                        Saiba Mais
-                    </a>
-                {/* </button> */}
+                <a href="#projects-section" className="px-10 py-3 md:py-4 font-bold leading-6 tracking-wider text-base md:text-lg text-buttonText bg-gradient-to-t from-indigo-400 to-blue-600 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                    Saiba Mais
+                </a>
             </div>
 
             <div className="">
