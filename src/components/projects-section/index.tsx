@@ -1,8 +1,15 @@
+import HorizonProjectImage from '../../assets/images/projects/horizonseg-project.png';
+import HelenProjectImage from '../../assets/images/projects/helen-project.png';
+import BeteProjectImage from '../../assets/images/projects/betemorais-project.png';
+import TaticaProjectImage from '../../assets/images/projects/tatica-project.png';
+import BgProjects from '../../assets/images/elements/BG-Elemento-2.svg';
+
 export default function ProjectsSectionComponent() {
     return (
         <section id="projects-section" className="relative py-32 px-5 md:px-8 lg:px-20 bg-gradient-to-b from-indigo-500 to-blue-600">
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-left-top"></div>
-            <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-right-bottom"></div>
+            {/* <div className="absolute top-0 bottom-0 left-0 right-0 bg-element-02 bg-no-repeat bg-left-top"></div> */}
+            <img className="absolute top-0 left-0" src={BgProjects}></img>
+            <img className="absolute bottom-0 right-0" src={BgProjects}></img>
 
             <h3 className="relative text-[40px] md:text-5xl text-primaryText text-center font-semibold tracking-wider mb-8 md:mb-12">
                 Nossos Projetos
@@ -12,7 +19,7 @@ export default function ProjectsSectionComponent() {
                 <div className="md:w-1/2">
                     <a href="https://horizonseg.com.br" target="_blank" className="block md:mb-4 md:mr-4 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                         <div className="rounded-t-full bg-projectBg">
-                            <img className="w-full h-56 md:h-80 rounded-3xl" src="./src/assets/images/projects/horizonseg-project.png" alt="Projeto HorizonSeg" />
+                            <img className="w-full h-56 md:h-80 rounded-3xl" src={HorizonProjectImage} alt="Projeto HorizonSeg" />
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-6 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
@@ -34,7 +41,7 @@ export default function ProjectsSectionComponent() {
                 <div className="md:w-1/2">
                     <a href="https://helensantosoftalmologia.com.br" target="_blank" className="block md:mb-4 md:ml-4 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                         <div className="rounded-t-full bg-projectBg">
-                            <img className="w-full h-56 md:h-80 rounded-3xl" src="./src/assets/images/projects/helen-project.png" alt="Projeto Helen Santos" />
+                            <img className="w-full h-56 md:h-80 rounded-3xl" src={HelenProjectImage} alt="Projeto Helen Santos" />
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
@@ -56,7 +63,7 @@ export default function ProjectsSectionComponent() {
                 <div className="md:w-1/2">
                     <a href="https://betemorais.com.br" target="_blank" className="block md:mt-4 md:mr-4 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                         <div className="rounded-t-full bg-projectBg">
-                            <img className="w-full h-56 md:h-80 rounded-3xl" src="./src/assets/images/projects/betemorais-project.png" alt="Projeto Bete Morais" />
+                            <img className="w-full h-56 md:h-80 rounded-3xl" src={BeteProjectImage} alt="Projeto Bete Morais" />
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
@@ -78,7 +85,7 @@ export default function ProjectsSectionComponent() {
                 <div className="md:w-1/2">
                     <a href="https://tatica-consultoria.vercel.app/" target="_blank" className="block md:mt-4 md:ml-4 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                         <div className="rounded-t-full bg-projectBg">
-                            <img className="w-full h-56 md:h-80 rounded-3xl" src="./src/assets/images/projects/tatica-project.png" alt="Projeto HorizonSeg" />
+                            <img className="w-full h-56 md:h-80 rounded-3xl" src={TaticaProjectImage} alt="Projeto HorizonSeg" />
                         </div>
 
                         <div className="flex flex-col gap-4 md:gap-5 service-card py-8 px-8 rounded-b-3xl bg-projectBg">
@@ -98,11 +105,15 @@ export default function ProjectsSectionComponent() {
                 </div>
             </div>
 
-            {/* <div className="relative text-center">
-                <button className="w-full md:w-auto md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-buttonBg rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
-                    Quero construir meu Site
-                </button>
-            </div> */}
+            <div className="relative mt-20 text-center">
+                <a href="https://api.whatsapp.com/send/?phone=5544999829545" target="_blank" className="md:hidden px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                    Entrar em Contato
+                </a>
+
+                <a href="https://web.whatsapp.com/send?phone=5544999829545" target="_blank" className="hidden md:inline px-12 md:px-20 pt-3.5 pb-3 font-bold leading-6 tracking-wider text-buttonText bg-gradient-to-t from-indigo-500 to-blue-400 rounded-full shadow-shape3 transition hover:bg-buttonHighlight">
+                    Entrar em Contato
+                </a>
+            </div>
         </section>
     )
 }

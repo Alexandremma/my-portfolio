@@ -1,3 +1,5 @@
+import InitialBannerImage from '../../assets/images/banners/web-options.svg';
+
 export default function BannerSectionComponent() {
     return (
         <section id="initial-banner-section" className="relative w-full h-screen md:h-[640px] lg:h-[720px] flex flex-col-reverse md:flex-row items-center justify-center pt-4 md:pt-24 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
@@ -18,7 +20,7 @@ export default function BannerSectionComponent() {
             </div>
 
             <div className="">
-                <img className="md:block pt-8" src="src/assets/images/banners/web-options.svg" alt="" />
+                <img className="md:block pt-4 md:pt-8" src={InitialBannerImage} alt="" />
             </div>
         </section>
     )
