@@ -16,7 +16,7 @@ export default function HeaderComponent() {
         <header className="w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-20 px-8 md:px-12 lg:px-20 py-5 flex items-center justify-between bg-bgTransparent">
             <div className="logo-container">
                 <a href="#">
-                    <img className="w-32 md:w-36" src="./dist/logo-horizontal-branca-completa-sem-fundo.png" alt="Logo AMM Web Developer" />
+                    <img className="w-32 md:w-36" src="./logo-amm.svg" alt="Logo AMM Web Developer" />
                 </a>
             </div>
 
