@@ -1,10 +1,11 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import LogoImage from '../../../public/logo-horizontal-branca-completa-sem-fundo.png'; 
 
 export default function HeaderComponent() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
 
     const openMobileMenu = () => {
         setIsMobileMenuOpen(true);
@@ -14,8 +15,24 @@ export default function HeaderComponent() {
         setIsMobileMenuOpen(false);
     }
 
+    const changeBackground = () => {
+        if (window.scrollY <= 80) {
+            setIsNavbarScrolled(false);
+        } else {
+            setIsNavbarScrolled(true);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeBackground);
+
+        return () => {
+            window.removeEventListener('scroll', changeBackground);
+        }
+    })
+
     return (
-        <header className="w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-20 px-8 md:px-12 lg:px-20 py-5 flex items-center justify-between bg-bgTransparent">
+        <header className={`w-full max-w-screen-2xl mx-auto fixed top-0 left-0 z-20 px-8 md:px-12 lg:px-20 py-5 flex items-center justify-between transition duration-700 ${isNavbarScrolled ? 'bg-scrollTransparent' : 'bg-bgTransparent'}`}>
             <div className="logo-container">
                 <a href="#">
                     <img className="w-32 md:w-36" src={LogoImage} alt="Logo AMM Web Developer" />
