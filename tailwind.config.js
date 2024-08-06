@@ -10,9 +10,11 @@ export default {
         sans: 'Comfortaa',
       },
       colors: {
-        primaryTransparent: 'rgb(255,255,255,0.4)', // menu cinza transparente
+        primaryTransparent: 'rgb(255, 255, 255, 0.4)', // menu cinza transparente
         secondaryTransparent: 'rgb(0,0,0,0.7)',
         otherTransparent: '#2863EB95',
+        scrollTransparent: 'rgb(40, 99, 235, 0.85)',
+        // scrollTransparent: 'rgb(147, 197, 253, 0.9)', azul claro
         bgTransparent: '',
         // rgb(89, 91, 115, 0.5) - transparente
         primaryBg: '#043873', //azul
@@ -29,6 +31,7 @@ export default {
         testBg3: '#084E9E',
         serviceBg: '#2863EB70',
         serviceBg2: '#2863EB70',
+        // A8C2FF50
         // 2863EB70
         // #2863EB
         // #6366F1
@@ -44,7 +47,7 @@ export default {
 
         // #6A6CFF - roxo stormbrain
         // #BD71FF - rosa stormbrain
-        projectBg: '#2863EB70',
+        projectBg: '#3A6FEA40',
         accordionBg: '#2863EB70',
         accordionBorder: '#fff2',
         // accordionBg: 'rgb(4, 56, 115, 0.7)',
@@ -64,8 +67,12 @@ export default {
         // 8A2BE2 - roxo destaque mesmo do botão
         // 4F46E5 - indigo-600
         // rgb(224, 124, 241) - lilas
-        buttonHighlight: '#3730A3', // fundo botão hover
-        buttonHighlight2: '#6366F1', // fundo botão hover
+        buttonHighlight: '#fff', // fundo botão hover
+        buttonHighlight2: '#E0BBE4', // fundo botão hover
+        // #E0BBE4
+        // #A8DADC
+        // #F3E9DC
+        // #6366F1
         inputBg: 'rgb(0,0,0,0)', // fundo inputs
         // 043873
         inputIconBg: '#fff',
@@ -74,6 +81,7 @@ export default {
         // #043873 - azul botão
         buttonFormHighlight: '#3730A3',
         whatsappBg: '#25d366',
+        formBg: 'rgb(147, 197, 253, 0.1)',
         // #38D773
         // #24CC63
         // #17980E
@@ -90,6 +98,7 @@ export default {
         // rgb(56, 189, 248) - 
         secondaryText: '#fff', // título cards e secundários
         contentText: '#fff', // cor textos menores
+        accordionText: '#fff',
         otherTextColor: 'rgb(56, 189, 248)',
         buttonText: '#fff',
         // rgb(16, 185, 129) - verde highlight

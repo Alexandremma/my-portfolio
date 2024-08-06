@@ -45,7 +45,7 @@ export default function FormComponent() {
     }
 
     return (
-        <form onSubmit={sendForm} className="lg:w-2/3 space-y-10 md:space-y-14">
+        <form onSubmit={sendForm} className="lg:w-2/3 space-y-10 md:space-y-14 bg-transparent md:bg-formBg py-12 md:py-20 px-0 md:px-10 md:rounded-2xl">
             <div className="space-y-4 md:space-y-8">
                 <h3 className="relative text-[40px] md:text-5xl text-white text-center font-semibold tracking-wider">
                     Entrar Em Contato

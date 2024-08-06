@@ -8,7 +8,7 @@ export default function ServiceBannerComponent() {
             {/* </div> */}
 
             <h3 className="relative text-[40px] md:text-5xl text-primaryText text-center font-semibold tracking-wider">
-                Serviços
+                Nossos Serviços
             </h3>
 
             <div className="relative services-list flex flex-wrap gap-8 md:gap-0">
@@ -20,11 +20,11 @@ export default function ServiceBannerComponent() {
                         </div>
 
                         <h4 className="text-2xl md:text-3xl text-secondaryText tracking-wider">
-                            Design <br /> Responsivo
+                            Sites <br /> Responsivos
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam perspiciatis blanditiis officiis voluptas corrupti omnis tempore quae repellendus nobis, magni beatae minus et voluptate. Porro magnam impedit architecto odio.
+                            Desenvolvemos sites responsivos que se adaptam a diferentes tamanhos de tela, garantindo uma experiência de navegação fluida e agradável para todos os usuários. Não importa em qual dispositivo os seus clientes estejam.
                         </p>
                     </div>
                 </div>
@@ -37,11 +37,11 @@ export default function ServiceBannerComponent() {
                         </div>
 
                         <h4 className="text-2xl md:text-3xl text-secondaryText tracking-wider">
-                            Design <br /> Responsivo
+                            Design <br /> Personalizado
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam perspiciatis blanditiis officiis voluptas corrupti omnis tempore quae repellendus nobis, magni beatae minus et voluptate. Porro magnam impedit architecto odio.
+                            Criamos designs exclusivos e personalizados que capturam a essência do seu negócio. Trabalhamos em colaboração com você para entender suas necessidades e traduzir sua visão em um design único.
                         </p>
                     </div>
                 </div>
@@ -54,11 +54,11 @@ export default function ServiceBannerComponent() {
                         </div>
 
                         <h4 className="text-2xl md:text-3xl text-secondaryText tracking-wider">
-                            Design <br /> Responsivo
+                            Otimização SEO <br /> para o Google
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam perspiciatis blanditiis officiis voluptas corrupti omnis tempore quae repellendus nobis, magni beatae minus et voluptate. Porro magnam impedit architecto odio.
+                            Oferecemos serviços de otimização para motores de busca (SEO), com isso, aumentamos a visibilidade do seu site no Google e outros motores de busca, atraindo mais visitantes e potencializando suas oportunidades de negócios.
                         </p>
                     </div>
                 </div>
@@ -71,11 +71,11 @@ export default function ServiceBannerComponent() {
                         </div>
 
                         <h4 className="text-2xl md:text-3xl text-secondaryText tracking-wider">
-                            Design <br /> Responsivo
+                            Suporte <br /> Contínuo
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam perspiciatis blanditiis officiis voluptas corrupti omnis tempore quae repellendus nobis, magni beatae minus et voluptate. Porro magnam impedit architecto odio.
+                            Nosso compromisso com você não termina após a entrega do site. Oferecemos suporte contínuo para garantir que seu site esteja seguro e funcionando, mesmo após a entrega do projeto. Permitindo que você se concentre em administrar seu negócio.
                         </p>
                     </div>
                 </div>

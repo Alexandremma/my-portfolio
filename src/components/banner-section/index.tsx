@@ -2,13 +2,13 @@ import InitialBannerImage from '../../assets/images/banners/web-options.svg';
 
 export default function BannerSectionComponent() {
     return (
-        <section id="initial-banner-section" className="relative w-full h-screen md:h-[640px] lg:h-[720px] flex flex-col-reverse md:flex-row items-center justify-center pt-4 md:pt-24 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
+        <section id="initial-banner-section" className="relative w-full h-screen md:h-[640px] lg:h-[720px] flex flex-col-reverse md:flex-row items-center justify-end md:justify-center pt-16 md:pt-24 px-8 md:px-16 lg:px-28 bg-gradient-to-t from-indigo-500 to-blue-600">
             <div className="relative z-10">
                 <h2 className="md:w-[640px] text-[32px] md:text-4xl lg:text-6xl text-bannerText font-bold md:leading-snug leading-normal tracking-wider">
                     Desenvolvemos soluções <br className="hidden md:block lg:hidden" /> para o seu negócio.
                 </h2>
 
-                <h5 className="mt-4 mb-6 md:mt-8 md:mb-10 text-lg md:text-xl lg:text-2xl text-bannerText font-semibold tracking-wider">
+                <h5 className="mt-4 mb-10 md:mt-8 md:mb-10 text-lg md:text-xl lg:text-2xl text-bannerText font-semibold tracking-wider">
                     Soluções web personalizadas.
                 </h5>
                 
@@ -18,7 +18,7 @@ export default function BannerSectionComponent() {
             </div>
 
             <div className="">
-                <img className="md:block pt-4 md:pt-8" src={InitialBannerImage} alt="" />
+                <img className="md:block py-4 md:pt-8 md:pb-0" src={InitialBannerImage} alt="" />
             </div>
         </section>
     )
