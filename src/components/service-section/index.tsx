@@ -24,7 +24,7 @@ export default function ServiceBannerComponent() {
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Desenvolvemos sites responsivos que se adaptam a diferentes tamanhos de tela, garantindo uma experiência de navegação fluida e agradável para todos os usuários. Não importa em qual dispositivo os seus clientes estejam.
+                            Desenvolvemos sites responsivos que se adaptam a diferentes tamanhos de tela, garantindo uma experiência de navegação fluida e agradável para todos os usuários. Não importa em qual dispositivo estejam.
                         </p>
                     </div>
                 </div>
