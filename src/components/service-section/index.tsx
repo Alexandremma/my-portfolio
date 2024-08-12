@@ -11,7 +11,7 @@ export default function ServiceBannerComponent() {
                 Nossos Serviços
             </h3>
 
-            <div className="relative services-list flex flex-wrap gap-8 md:gap-0">
+            <div className="relative services-list max-w-screen-2xl mx-auto lg:px-20 flex flex-wrap gap-8 md:gap-0">
                 <div className="md:w-1/2">
                     <div className="md:mr-4 md:mb-4 flex flex-col gap-5 service-card py-10 px-7 md:p-12 bg-serviceBg2 shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                         <div className="flex items-center gap-2">
@@ -58,7 +58,7 @@ export default function ServiceBannerComponent() {
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Oferecemos serviços de otimização para motores de busca (SEO), com isso, aumentamos a visibilidade do seu site no Google e outros motores de busca, atraindo mais visitantes e potencializando suas oportunidades de negócios.
+                            Oferecemos serviços de otimização para motores de busca (SEO), aumentando a visibilidade do seu site no Google e outros motores de busca, potencializando suas oportunidades de negócios.
                         </p>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ export default function ServiceBannerComponent() {
                         </h4>
 
                         <p className="text-sm text-contentText tracking-wide">
-                            Nosso compromisso com você não termina após a entrega do site. Oferecemos suporte contínuo para garantir que seu site esteja seguro e funcionando, mesmo após a entrega do projeto. Permitindo que você se concentre em administrar seu negócio.
+                            Nosso compromisso com você não termina após a entrega do site. Oferecemos suporte contínuo para garantir que seu site esteja seguro e funcionando, mesmo após a entrega do projeto.
                         </p>
                     </div>
                 </div>

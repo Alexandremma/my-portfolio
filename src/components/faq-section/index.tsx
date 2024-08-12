@@ -7,7 +7,7 @@ export default function FaqSectionComponent() {
                 Perguntas Frequentes
             </h3>
 
-            <div className="questions-list md:px-6 space-y-4">
+            <div className="max-w-screen-2xl mx-auto questions-list md:px-20 space-y-4">
                 <AccordionComponent question="Quanto tempo leva para desenvolver meu site?" answer="O tempo necessário para construir um site pode variar dependendo da complexidade do projeto e das funcionalidades desejadas. Em geral, um site básico pode levar de 4 a 6 semanas, enquanto projetos mais complexos podem levar de 8 a 12 semanas ou mais. Durante a fase inicial, discutiremos seus requisitos específicos e forneceremos um cronograma detalhado." />
 
                 <AccordionComponent question="Quanto custa construir um site?" answer="O custo de construir um site depende de vários fatores, incluindo o número de páginas, as funcionalidades desejadas, o design personalizado e outras necessidades específicas. Oferecemos pacotes de preços variados para atender diferentes orçamentos. Entre em contato conosco para uma consulta gratuita e um orçamento personalizado." />

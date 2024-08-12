@@ -3,7 +3,7 @@ import LogoImage from '../../../public/logo-horizontal-branca-completa-sem-fundo
 
 export default function FooterComponent() {
     return (
-        <footer className="relative py-24 pb-24 md:pb-16 px-4 md:px-16 lg:px-28 flex flex-col md:flex-row items-center justify-between gap-16">
+        <footer className="max-w-screen-2xl mx-auto relative py-24 pb-24 md:pb-16 px-4 md:px-16 lg:px-28 flex flex-col md:flex-row items-center justify-between gap-16">
             <div>
                 <a href="#">
                     <img className="w-32" src={LogoImage} alt="Logo AMM Web Developer" />

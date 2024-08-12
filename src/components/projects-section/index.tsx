@@ -14,7 +14,7 @@ export default function ProjectsSectionComponent() {
                 Nossos Projetos
             </h3>
 
-            <div className="relative services-list flex flex-wrap pt-10 mb-10 gap-16 md:gap-0">
+            <div className="max-w-screen-2xl mx-auto relative services-list lg:px-24 flex flex-wrap pt-10 mb-10 gap-16 md:gap-0">
                 <div className="md:w-1/2">
                     <a href="https://horizonseg.com.br" target="_blank" className="block md:mb-4 md:mr-4 bg-projectBg shadow-shape border border-serviceCardBorder rounded-3xl backdrop-blur-2xl">
                         <div className="rounded-t-full bg-projectBg">

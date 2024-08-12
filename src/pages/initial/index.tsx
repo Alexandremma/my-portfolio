@@ -36,7 +36,7 @@ export default function InitialPage() {
     }
 
     return (
-        <div className="max-w-screen-2xl mx-auto w-full">
+        <div className="mx-auto w-full">
             <HeaderComponent />
             
             <main id="main" className="main">
@@ -52,7 +52,7 @@ export default function InitialPage() {
             </main>
 
             <div className="relative">
-                <img src={BgFooter} alt="Imagem de um horizonte com montanhas" className="h-full absolute top-0 right-0 left-0 bottom-0" />
+                <img src={BgFooter} alt="Imagem de um horizonte com montanhas" className="h-full w-full absolute top-0 right-0 left-0 bottom-0" />
                 <div className="absolute top-0 right-0 left-0 bottom-0 bg-gradient-to-b from-indigo-500 to-blue-600 opacity-90"></div>
 
                 <FaqSectionComponent />
